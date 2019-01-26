@@ -1,7 +1,7 @@
 {
-  "name": "learning-git-3",
+  "name": "project--1",
   "version": "1.0.0",
-  "description": "https://mat955.github.io/learning-git-3/",
+  "description": "https://mat955.github.io/project--1/",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mat955/learning-git-3.git"
+    "url": "git+https://github.com/Mat955/project--1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mat955/learning-git-3/issues"
+    "url": "https://github.com/Mat955/project--1/issues"
   },
-  "homepage": "https://github.com/Mat955/learning-git-3#readme",
+  "homepage": "https://github.com/Mat955/project--1#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
