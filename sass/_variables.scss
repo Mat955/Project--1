@@ -1,15 +1,25 @@
 /* Colors */
 $paragraph-color: #333333;
 $main-color: #a6a6a6;
+$border-color: #e3e3e3;
+$icon-color: #9c9c9c;
+$link-color: #56819f;
+$link-hover-color: #ffa200;
 $button-main-color: #f58220;
 $button-hover-color: #ffa200;
-$links-hover-color: #ffa200;
 $background-color-sitebar: #191919;
 
-/* Font sizes */
+/* Font sizes, weight, line-height */
 $menu-font-size: 14px;
 $paragraph-font-size: 14px;
+$paragraph-font-weight: 300;
 $main-font-size: 16px;
+$main-font-weight: 500;
+$main-line-height: 42px;
+$section-font-weight: 700;
+$button-font: 18px;
+$button-weight: 300;
+$sm-link-font: 13px;
 
 /* Fonts */
 $main-font: 'Roboto',
