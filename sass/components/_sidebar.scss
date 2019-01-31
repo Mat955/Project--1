@@ -1,0 +1,74 @@
+.menu-logo {
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+nav {
+    width: 188px;
+    height: 100vh;
+    background-color: $background-color-sitebar;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #333333;
+}
+
+nav ul li a {
+    display: block;
+    padding-left: 15px;
+    font-size: $menu-font-size;
+    line-height: 42px;
+    text-decoration: none;
+    font-family: $main-font;
+    font-weight: 300;
+    color: #999999;
+}
+
+nav ul li:hover>a {
+    cursor: pointer;
+    background-color: #282828;
+    border-left: solid 4px orange;
+    color: #ffffff;
+}
+
+.icn {
+    padding-right: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+.icons-ham {
+    font-size: 16px;
+    padding-left: 45px;
+    color: #999999;
+}
+
+.details {
+    padding-right: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+.manager {
+    margin-left: 20px;
+}
+
+.manager p {
+    color: #808080;
+    font-family: $main-font;
+    font-size: $paragraph-font-size;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.manager h3 {
+    color: #56819f;
+    font-family: $main-font;
+    font-size: $paragraph-font-size;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-left: 55px;
+}

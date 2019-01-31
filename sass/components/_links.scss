@@ -1,0 +1,18 @@
+.link {
+    font-family: $main-font;
+    font-weight: $button-weight;
+    color: $link-color;
+}
+
+.lg-link {
+    font-size: $main-font-size;
+}
+
+.lg-link:hover,
+.sm-link:hover {
+    color: $link-hover-color;
+}
+
+.sm-link {
+    font-size: $sm-link-font;
+}

@@ -1,0 +1,33 @@
+.btn {
+    text-align: center;
+    color: #ffffff;
+    border-radius: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: $main-font;
+    font-size: $button-font;
+    font-weight: $button-weight;
+}
+
+.btn-cancel {
+    width: 93px;
+    background-color: #979797;
+}
+
+.btn-cancel:hover {
+    background-color: $button-canc-hover-color;
+}
+
+.btn-accept {
+    width: 93px;
+    background-color: $button-main-color;
+}
+
+.btn-accept:hover {
+    background-color: #ffa200;
+}
+
+.btn-disabled {
+    width: 203px;
+    background-color: #e3e3e3;
+}

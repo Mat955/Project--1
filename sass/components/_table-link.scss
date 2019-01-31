@@ -1,0 +1,25 @@
+.table-link {
+    width: 366px;
+    padding: 20px;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+}
+
+.table-link h2,
+a {
+    display: inline;
+}
+
+.table-link a {
+    margin-left: 225px;
+    text-decoration: none;
+}
+
+.table-link:hover {
+    background-color: #b1bfbf;
+    opacity: 0.98;
+}
+
+.table-link a:hover {
+    color: $link-hover-color;
+}
