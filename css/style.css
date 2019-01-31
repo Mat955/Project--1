@@ -395,10 +395,16 @@ nav ul li:hover > a {
   color: #ffffff;
 }
 
-.icon {
+.icn {
   padding-right: 15px;
   width: 16px;
   height: 16px;
+}
+
+.icons-ham {
+  font-size: 16px;
+  padding-left: 45px;
+  color: #999999;
 }
 
 .details {
@@ -431,10 +437,11 @@ nav ul li:hover > a {
 .top-bar {
   border: 1px solid #e3e3e3;
   width: 100vw;
-  height: 60px;
+  height: 65px;
 }
 
 .top-bar ul {
+  font-size: 0;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -467,16 +474,14 @@ nav ul li:hover > a {
   font-weight: 300;
 }
 
-.top-bar img {
+.top-bar .ico {
   padding-left: 20px;
   padding-right: 20px;
-  width: 18px;
-  height: 18px;
+  font-size: 18px;
 }
 
-.top-bar .arrow {
-  width: 11px;
-  height: 8px;
+.top-bar .icon-arrow-down-small {
+  font-size: 11px;
 }
 
 .data-period {
