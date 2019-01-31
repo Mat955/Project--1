@@ -214,9 +214,17 @@ nav ul li:hover>a {
     background-color: #979797;
 }
 
+.btn-cancel:hover {
+    background-color: $button-canc-hover-color;
+}
+
 .btn-accept {
     width: 93px;
     background-color: $button-main-color;
+}
+
+.btn-accept:hover {
+    background-color: #ffa200;
 }
 
 .btn-disabled {
