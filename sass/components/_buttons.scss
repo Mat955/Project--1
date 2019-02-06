@@ -31,3 +31,13 @@
     width: 203px;
     background-color: #e3e3e3;
 }
+
+.btn-small {
+    font-size: 15px;
+    width: 40px;
+    background-color: $button-main-color;
+}
+
+.btn-small:hover {
+    background-color: #ffa200;
+}

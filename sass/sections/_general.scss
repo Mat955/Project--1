@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1280px;
+    margin: 150px;
+}
+
+.general {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 150vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.general h1 {
+    padding: 15px;
+    border-bottom: 1px solid $border-color;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $border-color;
+}
+
+.icon-calendar {
+    color: $icon-color;
+    margin: 10px;
+}
+
+.data .btn {
+    margin-left: 10px;
+}
+
+.statistic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.statistic .list-digit {
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-bottom: 22px;
+}
+
+.earning-chart {
+    margin-top: 50px;
+}
+
+.earning-chart h2 {
+    margin-left: 150px;
+}
+
+.earning-chart .graph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.earning-chart .responsive {
+    max-width: 100%;
+    height: auto;
+}

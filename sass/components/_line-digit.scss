@@ -1,13 +1,12 @@
 .list-digit {
-    width: 367px;
-    border-bottom: 2px solid $border-color;
+    display: flex;
+    align-items: flex-start;
+    width: 310px;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 5px;
 }
 
-.list-digit h2,
-p {
-    display: inline-block;
-}
 
-.list-digit p {
-    padding-left: 228px;
+.list-digit .number-list {
+    align-self: flex-end;
 }
