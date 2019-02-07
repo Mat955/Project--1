@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 150px;
+    max-width: 1280;
+    border: 1px solid gray;
+    height: 150vh;
+}
+
+.links h1 {
+    padding: 10px;
+    border-bottom: 1px solid $border-color;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table-link:nth-of-type(11) {
+    border-bottom: 1px solid $border-color;
+}

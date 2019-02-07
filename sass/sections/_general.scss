@@ -1,25 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    max-width: 1280px;
     margin: 150px;
+    max-width: 1280px;
 }
 
 .general {
-    position: relative;
     display: flex;
     flex-direction: column;
     border: 1px solid red;
     height: 150vh;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .general h1 {
