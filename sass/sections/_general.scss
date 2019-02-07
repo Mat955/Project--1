@@ -1,16 +1,28 @@
-body {
-    margin: 150px;
-    max-width: 1280px;
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row:after,
+.row:before {
+    content: "";
+    display: block;
+}
+
+.row:after {
+    clear: both;
 }
 
 .general {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     height: 150vh;
 }
 
 .general h1 {
+    text-align: center;
     padding: 15px;
     border-bottom: 1px solid $border-color;
 }
@@ -19,18 +31,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid $border-color;
 }
 
 .icon-calendar {
     color: $icon-color;
-    margin: 10px;
 }
 
 .data .btn {
-    margin-left: 10px;
+    width: 2%;
+    margin-left: 5px;
 }
 
 .statistic {
@@ -38,6 +50,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
+    margin-left: 30px;
 }
 
 .statistic .list-digit {
@@ -51,17 +64,67 @@ body {
 }
 
 .earning-chart h2 {
-    margin-left: 150px;
+    text-align: center;
 }
 
 .earning-chart .graph {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 50px;
 }
 
 .earning-chart .responsive {
     max-width: 100%;
     height: auto;
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    @include grid('m');
+
+    .data {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .earning-chart .responsive {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    @include grid('lg');
+
+    .data-period {
+        width: 40%;
+    }
+
+    .data-period span {
+        margin-right: 20%;
+    }
+
+    .statistic {
+        margin-right: 120px;
+    }
+
+    .earning-chart .responsive {
+        margin-left: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    @include grid ('xl');
+
+    .data-period {
+        width: 40%;
+    }
+
+    .statistic {
+        margin-right: 3%;
+    }
+
+    .data-period span {
+        margin-right: 25%;
+    }
+
+    .earning-chart .responsive {
+        margin-left: 250px;
+    }
 }

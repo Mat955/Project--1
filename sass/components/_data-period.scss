@@ -1,5 +1,4 @@
 .data-period {
-    width: 325px;
     height: 40px;
     border-radius: 3px;
     border: 1px solid $border-color;
@@ -11,15 +10,9 @@
     color: $paragraph-color;
     font-weight: $paragraph-font-weight;
     line-height: $main-line-height;
-    margin-right: 50px;
+    margin-right: 35px;
     padding: 15px;
     border-left: 1px solid $border-color;
-}
-
-.data-period img {
-    margin-left: 15px;
-    width: 13px;
-    height: 13px;
 }
 
 .data-period:hover {
