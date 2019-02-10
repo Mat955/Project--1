@@ -1,16 +1,23 @@
 .table-link {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 566px;
     padding: 20px;
     border-top: 1px solid $border-color;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.table-link i {
-    padding-left: 25px;
+.layer {
+    width: 100%;
+    height: 100%;
+}
+
+.table-link h2 {
+    width: 120px;
+}
+
+.table-link .icons {
+    visibility: hidden;
     color: $icon-color;
 }
 
@@ -19,9 +26,12 @@
 }
 
 .table-link:hover {
-    visibility: visible;
     background-color: #b1bfbf;
     opacity: 0.9;
+}
+
+.table-link:hover .icons {
+    visibility: visible;
 }
 
 .table-link:hover .table-link a:hover {
