@@ -744,6 +744,7 @@ template {
 
 .btn-cancel {
   background-color: #979797;
+  cursor: pointer;
 }
 
 .btn-cancel:hover {
@@ -752,6 +753,7 @@ template {
 
 .btn-accept {
   background-color: #f58220;
+  cursor: pointer;
 }
 
 .btn-accept:hover {
@@ -760,11 +762,13 @@ template {
 
 .btn-disabled {
   background-color: #e3e3e3;
+  cursor: pointer;
 }
 
 .btn-small {
   font-size: 15px;
   background-color: #f58220;
+  cursor: pointer;
 }
 
 .btn-small:hover {
@@ -778,13 +782,17 @@ template {
 }
 
 .data-period span {
-  font-size: 16px;
+  font-size: 14px;
   color: #333333;
   font-weight: 300;
   line-height: 42px;
   margin-right: 35px;
   padding: 15px;
   border-left: 1px solid #e3e3e3;
+}
+
+.data-period i:hover {
+  color: #333333;
 }
 
 .data-period:hover {
@@ -856,8 +864,9 @@ nav {
 nav ul {
   padding: 0;
   list-style-type: none;
-  padding-bottom: 20px;
-  border-bottom: solid 1px #333333;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333333;
+  padding-top: 20px;
 }
 
 nav ul li a {
@@ -874,7 +883,7 @@ nav ul li a {
 nav ul li:hover > a {
   cursor: pointer;
   background-color: #282828;
-  border-left: solid 4px orange;
+  border-left: 4px solid orange;
   color: #ffffff;
 }
 
@@ -885,8 +894,7 @@ nav ul li:hover > a {
 }
 
 .icons-ham {
-  font-size: 16px;
-  padding-left: 45px;
+  padding-left: 50px;
   color: #999999;
 }
 
@@ -900,10 +908,12 @@ nav ul li:hover > a {
   margin-left: 20px;
 }
 
-.manager p {
+.manager h2 {
   color: #808080;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -911,7 +921,7 @@ nav ul li:hover > a {
 .manager h3 {
   color: #56819f;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   padding-top: 15px;
   padding-left: 55px;
@@ -931,17 +941,12 @@ nav ul li:hover > a {
   cursor: pointer;
 }
 
-.layer {
-  width: 100%;
-  height: 100%;
-}
-
 .table-link h2 {
+  text-align: left;
   width: 120px;
 }
 
 .table-link .icons {
-  visibility: hidden;
   color: #9c9c9c;
 }
 
@@ -950,12 +955,7 @@ nav ul li:hover > a {
 }
 
 .table-link:hover {
-  background-color: #b1bfbf;
-  opacity: 0.9;
-}
-
-.table-link:hover .icons {
-  visibility: visible;
+  background-color: rgba(177, 191, 191, 0.18);
 }
 
 .table-link:hover .table-link a:hover {
@@ -968,6 +968,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
@@ -981,6 +982,7 @@ h2 {
   border: 1px solid #e3e3e3;
   width: 100%;
   height: 65px;
+  background-color: #ffffff;
 }
 
 .top-bar ul {
@@ -993,7 +995,7 @@ h2 {
 
 .top-bar ul li {
   display: inline-block;
-  border-left: 2px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
 }
 
 .top-bar ul li a {
@@ -1052,7 +1054,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150vh;
 }
 
 .general h1 {
@@ -1116,6 +1117,7 @@ h2 {
 
 .earning-chart .graph {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .earning-chart .responsive {
@@ -1196,9 +1198,8 @@ h2 {
             flex: 0 0 100%;
     max-width: 100%;
   }
-  .data {
-    width: 50%;
-    margin-left: 25%;
+  .data-period {
+    width: 40%;
   }
   .earning-chart .responsive {
     margin-left: 100px;
@@ -1284,10 +1285,10 @@ h2 {
   .data-period span {
     margin-right: 20%;
   }
-  .statistic {
-    margin-right: 120px;
+  .general h1 {
+    text-align: left;
   }
-  .earning-chart .responsive {
+  .earning-chart .graph {
     margin-left: 200px;
   }
 }
@@ -1365,17 +1366,21 @@ h2 {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .general h1 {
+    text-align: left;
+  }
   .data-period {
-    width: 40%;
+    width: 30%;
   }
   .statistic {
-    margin-right: 3%;
+    margin-right: 10%;
+    margin-left: 15%;
   }
   .data-period span {
-    margin-right: 25%;
+    margin-right: 22%;
   }
   .earning-chart .responsive {
-    margin-left: 250px;
+    margin-left: 25%;
   }
 }
 
@@ -1403,7 +1408,7 @@ h2 {
 
 .links h1 {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -1421,7 +1426,6 @@ h2 {
 }
 
 .table-link {
-  font-size: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1432,7 +1436,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 .table-link h2,
@@ -1441,17 +1446,17 @@ h2 {
   margin-bottom: 10px;
 }
 
-.table-link i {
-  margin-left: 10px;
-}
-
 .table-link:hover {
   background-color: transparent;
 }
 
+.table-link .icons {
+  visibility: hidden;
+}
+
 .btn {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .table-link:nth-of-type(11) {
@@ -1460,10 +1465,40 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .table-link {
-    width: 50%;
-  }
-  .table-link h2 {
     font-size: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .table-link .link {
+    width: 120px;
+    margin-left: 200px;
+  }
+  .table-link .icons {
+    visibility: hidden;
+    margin-left: 120px;
+  }
+  .icons i {
+    color: #9c9c9c;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .table-link h2,
+  .link {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .table-link:hover {
+    background-color: rgba(177, 191, 191, 0.18);
+  }
+  .table-link:hover .icons {
+    visibility: visible;
+  }
+  .table-link:hover .icon-links {
+    color: #f58220;
   }
 }
 
@@ -1474,17 +1509,41 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0;
+    padding: 20px;
   }
   .table-link .link {
     width: 120px;
     margin-left: 200px;
   }
   .table-link .icons {
+    visibility: hidden;
     margin-left: 120px;
   }
+  .icons i {
+    color: #9c9c9c;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .links h1 {
+    text-align: left;
+  }
+  .table-link h2,
+  .link {
+    text-align: left;
+  }
   .table-link:hover {
-    background-color: #b1bfbf;
-    opacity: 0.9;
+    background-color: rgba(177, 191, 191, 0.18);
+  }
+  .table-link:hover .icons {
+    visibility: visible;
+  }
+  .table-link:hover .icon-links {
+    color: #f58220;
   }
 }
 
@@ -1495,6 +1554,13 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  .table-link h2,
+  .link {
+    text-align: left;
+    margin-bottom: 0;
   }
   .table-link .link {
     width: 120px;
@@ -1504,12 +1570,45 @@ h2 {
     visibility: hidden;
     margin-left: 120px;
   }
+  .icons i {
+    margin-left: 20px;
+  }
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .links h1 {
+    text-align: left;
+  }
+  .table-link:hover {
+    background-color: rgba(177, 191, 191, 0.18);
+  }
   .table-link:hover .icons {
     visibility: visible;
   }
-  .table-link:hover {
-    background-color: #b1bfbf;
-    opacity: 0.99;
+  .table-link:hover .icon-links {
+    color: #f58220;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f2;
+}
+
+nav {
+  width: 15%;
+}
+
+.top-bar {
+  width: 100%;
+}
+
+.general {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

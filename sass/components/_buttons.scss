@@ -9,6 +9,7 @@
 
 .btn-cancel {
     background-color: #979797;
+    cursor: pointer;
 }
 
 .btn-cancel:hover {
@@ -17,6 +18,7 @@
 
 .btn-accept {
     background-color: $button-main-color;
+    cursor: pointer;
 }
 
 .btn-accept:hover {
@@ -25,11 +27,13 @@
 
 .btn-disabled {
     background-color: #e3e3e3;
+    cursor: pointer;
 }
 
 .btn-small {
     font-size: 15px;
     background-color: $button-main-color;
+    cursor: pointer;
 }
 
 .btn-small:hover {

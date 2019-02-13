@@ -22,7 +22,7 @@
 
 .links h1 {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid $border-color;
 }
 
@@ -33,11 +33,11 @@
 }
 
 .table-link {
-    font-size: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 .table-link h2,
@@ -46,17 +46,17 @@
     margin-bottom: 10px;
 }
 
-.table-link i {
-    margin-left: 10px;
-}
-
 .table-link:hover {
     background-color: transparent;
 }
 
+.table-link .icons {
+    visibility: hidden;
+}
+
 .btn {
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .table-link:nth-of-type(11) {
@@ -66,42 +66,10 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
     .table-link {
-        width: 50%;
-    }
-
-    .table-link h2 {
-        font-size: $main-font-size;
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    .table-link {
         font-size: 16px;
         flex-direction: row;
-    }
-
-    .table-link .link {
-        width: 120px;
-        margin-left: 200px;
-    }
-
-    .table-link .icons {
-        margin-left: 120px;
-    }
-
-    .table-link:hover {
-        background-color: #b1bfbf;
-        opacity: 0.9;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .table-link {
-        font-size: 16px;
-        flex-direction: row;
+        margin-bottom: 0;
+        padding: 20px;
     }
 
     .table-link .link {
@@ -114,12 +82,131 @@
         margin-left: 120px;
     }
 
+    .icons i {
+        color: $icon-color;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .table-link h2,
+    .link {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .table-link:hover {
+        background-color: rgba(177, 191, 191, 0.18);
+    }
+
     .table-link:hover .icons {
         visibility: visible;
     }
 
+    .table-link:hover .icon-links {
+        color: $icon-main-color-hover;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .table-link {
+        font-size: 16px;
+        flex-direction: row;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .table-link .link {
+        width: 120px;
+        margin-left: 200px;
+    }
+
+    .table-link .icons {
+        visibility: hidden;
+        margin-left: 120px;
+    }
+
+    .icons i {
+        color: $icon-color;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .links h1 {
+        text-align: left;
+    }
+
+    .table-link h2,
+    .link {
+        text-align: left;
+    }
+
     .table-link:hover {
-        background-color: #b1bfbf;
-        opacity: 0.99;
+        background-color: rgba(177, 191, 191, 0.18);
+    }
+
+    .table-link:hover .icons {
+        visibility: visible;
+    }
+
+    .table-link:hover .icon-links {
+        color: $icon-main-color-hover;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .table-link {
+        font-size: 16px;
+        flex-direction: row;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .table-link h2,
+    .link {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .table-link .link {
+        width: 120px;
+        margin-left: 200px;
+    }
+
+    .table-link .icons {
+        visibility: hidden;
+        margin-left: 120px;
+    }
+
+    .icons i {
+        margin-left: 20px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .links h1 {
+        text-align: left;
+    }
+
+    .table-link:hover {
+        background-color: rgba(177, 191, 191, 0.18);
+    }
+
+    .table-link:hover .icons {
+        visibility: visible;
+    }
+
+    .table-link:hover .icon-links {
+        color: $icon-main-color-hover;
     }
 }

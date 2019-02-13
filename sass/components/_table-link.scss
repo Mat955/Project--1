@@ -7,17 +7,12 @@
     cursor: pointer;
 }
 
-.layer {
-    width: 100%;
-    height: 100%;
-}
-
 .table-link h2 {
+    text-align: left;
     width: 120px;
 }
 
 .table-link .icons {
-    visibility: hidden;
     color: $icon-color;
 }
 
@@ -26,13 +21,12 @@
 }
 
 .table-link:hover {
-    background-color: #b1bfbf;
-    opacity: 0.9;
+    background-color: rgba(177, 191, 191, 0.18);
 }
 
-.table-link:hover .icons {
-    visibility: visible;
-}
+// .table-link:hover .icons {
+//     visibility: visible;
+// }
 
 .table-link:hover .table-link a:hover {
     color: $link-hover-color;
