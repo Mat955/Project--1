@@ -1,6 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 5px;
 }
 
 body {
@@ -8,15 +23,301 @@ body {
 }
 
 nav {
-    // position: fixed;
+    position: fixed;
     width: 15%;
 }
 
+nav ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .top-bar {
-    // position: fixed;
+    position: fixed;
     width: 100%;
 }
 
-.general {
+.general,
+.links {
     background-color: #ffffff;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.container-fluid {
+    margin-left: 15px;
+}
+
+.data-period {
+    width: 85%;
+}
+
+.btn {
+    padding: 18px;
+}
+
+.btn-accept {
+    padding: 12px;
+}
+
+.sidebar {
+    width: 10%;
+    height: 100%;
+}
+
+.sidebar-big {
+    display: none;
+}
+
+.sidebar-small {
+    display: none;
+}
+
+.sidebar .menu-logo {
+    display: none;
+}
+
+.show {
+    width: 50%;
+    text-align: center;
+}
+
+.big {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.big ul li {
+    text-align: left;
+}
+
+.big ul a {
+    font-size: 16px;
+    padding-top: 14px;
+}
+
+.small-topbar li i {
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.icons-ham {
+    height: 80px;
+    padding: 30px 12px 30px 8px;
+}
+
+@media (max-width: 767px) {
+    @include grid('s');
+
+    .container-fluid {
+        margin-left: 15px;
+    }
+
+    .top-bar {
+        width: 0;
+    }
+
+    .icn {
+        font-size: 18px;
+    }
+
+    .icons-ham {
+        height: 80px;
+        padding: 30px 12px 30px 10px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .data-period {
+        width: 58%;
+    }
+
+    .icons-ham {
+        padding: 30px 12px 30px 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    @include grid('m');
+
+
+    .container {
+        padding-right: 15px;
+    }
+
+    .container-fluid {
+        max-width: 100vw;
+        padding-top: 75px;
+        padding-left: 30px;
+    }
+
+    .data-period {
+        width: 50%;
+    }
+
+    .data-period span {
+        margin-right: 90px;
+    }
+
+    .sidebar {
+        width: 8%;
+    }
+
+    .statistic {
+        margin-left: 0;
+    }
+
+    .show {
+        width: 25%;
+        text-align: center;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .big {
+        display: block;
+    }
+
+    .icons-ham {
+        height: 80px;
+        padding: 30px 12px 30px 20px;
+    }
+
+    .icn {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    @include grid('lg');
+
+    .container {
+        padding-right: 5px;
+        padding-left: 170px;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    nav ul {
+        padding-bottom: 20px;
+    }
+
+    .statistic {
+        margin-left: 0;
+    }
+
+    .data-period {
+        width: 35%;
+    }
+
+    .btn-accept {
+        padding: 12px;
+    }
+
+    .sidebar {
+        width: 15%;
+    }
+
+    .sidebar-big {
+        display: block;
+    }
+
+    .sidebar .menu-logo {
+        display: inline-block;
+    }
+
+    .menu-logo {
+        padding-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .icons-ham {
+        display: inline-block;
+        padding: 30px 0px 30px 20px;
+    }
+
+    .icn {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1200px) {
+    @include grid('xl');
+
+    .container {
+        padding-right: 5px;
+        padding-left: 170px;
+    }
+
+    .container-fluid {
+        padding-top: 75px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    nav ul {
+        padding-bottom: 20px;
+    }
+
+    .statistic {
+        margin-left: 0;
+    }
+
+    .data-period {
+        width: 35%;
+    }
+
+    .btn-accept {
+        padding: 12px;
+    }
+
+    .sidebar {
+        width: 15%;
+    }
+
+    .sidebar-big {
+        display: block;
+    }
+
+    .sidebar .menu-logo {
+        display: inline-block;
+    }
+
+    .menu-logo {
+        padding-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .icons-ham {
+        display: inline-block;
+        padding: 30px 0px 30px 20px;
+    }
+
+    .icn {
+        font-size: 18px;
+    }
+
+    .show {
+        width: 15%;
+        text-align: left;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
 }
