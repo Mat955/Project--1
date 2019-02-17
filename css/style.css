@@ -1600,7 +1600,7 @@ h2 {
 
 .tables {
   overflow-x: auto;
-  margin-top: 30px;
+  margin-top: 40px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -1620,7 +1620,7 @@ td {
 }
 
 th {
-  font-size: 16px;
+  font-size: 14px;
   color: #a6a6a6;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -1628,7 +1628,6 @@ th {
   padding: 15px 10px;
   width: 20px;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -1668,10 +1667,9 @@ tfoot .change {
 
 tfoot .change a {
   display: inline-block;
-  background: #FFFFFF;
   color: #56819f;
   font-size: 16px;
-  padding: 2px 8px;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -1682,6 +1680,45 @@ tfoot .change a i {
 
 tfoot .change a:hover {
   color: #ffa200;
+}
+
+tfoot .change .active {
+  background-color: #f1f3f3;
+  color: #a6a6a6;
+}
+
+tfoot .panel-table {
+  width: 100%;
+  text-align: center;
+}
+
+tfoot .panel-table a {
+  display: inline-block;
+  color: #56819f;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+tfoot .panel-table a i {
+  font-size: 15px;
+}
+
+tfoot .panel-table .active {
+  background-color: #f1f3f3;
+  color: #a6a6a6;
+}
+
+tfoot .panel-table a:hover {
+  color: #ffa200;
+}
+
+@media (max-width: 767px) {
+  tfoot .panel-table a {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
 
 * {
