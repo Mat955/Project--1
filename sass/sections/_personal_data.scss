@@ -1,0 +1,103 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $border-color;
+}
+
+.personal_data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.personal_data h1 {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid $border-color;
+    font-weight: $section-font-weight;
+}
+
+.field {
+    text-align: center;
+}
+
+.labels_1,
+.labels_2,
+.labels_3,
+.labels_4 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+input[type="text"],
+[type="email"],
+[type="password"] {
+    padding: 11px 70px 11px 15px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid $border-color;
+    color: #333333;
+    outline-color: #191919;
+    font-family: $main-font;
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+    font-size: $main-font-size;
+    color: $main-color;
+    font-family: $main-font;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    @include grid('s');
+
+    .personal_data h1 {
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    input[type="text"],
+    [type="email"],
+    [type="password"] {
+        padding: 11px 45px 11px 15px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .container {
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+}
