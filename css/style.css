@@ -1985,6 +1985,9 @@ nav ul {
   .icn {
     font-size: 18px;
   }
+  .manager {
+    display: none;
+  }
   .icons-ham {
     height: 80px;
     padding: 30px 12px 30px 10px;
@@ -2087,6 +2090,14 @@ nav ul {
   .data-period span {
     margin-right: 90px;
   }
+  nav ul {
+    padding-bottom: 40px;
+  }
+  .manager h3,
+  h2 {
+    padding-left: 0;
+    padding-right: 60px;
+  }
   .sidebar {
     width: 8%;
   }
@@ -2117,6 +2128,19 @@ nav ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .small-topbar {
+    display: none;
+  }
+  .table-link .link {
+    margin-left: 140px;
+  }
+  .table-link .icons {
+    margin-left: 170px;
+  }
+  .table-link h2,
+  .link {
+    width: 181px;
   }
 }
 
@@ -2234,6 +2258,15 @@ nav ul {
   .icn {
     font-size: 18px;
   }
+  .big {
+    display: none;
+  }
+  .show {
+    text-align: left;
+  }
+  .hide {
+    display: block;
+  }
   .graph {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2241,6 +2274,16 @@ nav ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .table-link .link {
+    margin-left: 140px;
+  }
+  .table-link .icons {
+    margin-left: 160px;
+  }
+  .table-link h2,
+  .link {
+    width: 181px;
   }
 }
 
@@ -2346,6 +2389,12 @@ nav ul {
   }
   .sidebar .menu-logo {
     display: inline-block;
+  }
+  .table-link .link {
+    margin-left: 140px;
+  }
+  .table-link .icons {
+    margin-left: 150px;
   }
   .menu-logo {
     padding-bottom: 30px;
