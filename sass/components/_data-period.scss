@@ -11,8 +11,12 @@
     font-weight: $paragraph-font-weight;
     line-height: $main-line-height;
     margin-right: 35px;
-    padding: 15px;
+    padding: 7px;
     border-left: 1px solid $border-color;
+}
+
+.data-period i:hover {
+    color: #333333;
 }
 
 .data-period:hover {

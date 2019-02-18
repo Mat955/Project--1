@@ -13,10 +13,11 @@
 @import "components/sidebar";
 @import "components/table-link";
 @import "components/text";
-@import "components/top-menu";
+@import "components/top-bar";
 
 //Section
 @import "sections/general";
 @import "sections/links";
 
-//General
+//Pages
+@import "pages/general-page"
