@@ -1,0 +1,152 @@
+.message-modal {
+    max-width: 1200px;
+    width: 95%;
+}
+
+.header-manager {
+    padding: 15px 16px 40px 16px;
+    border-bottom: 1px solid $border-color;
+}
+
+.header-manager h2 {
+    font-size: 30px;
+    color: #333333;
+    font-family: $main-font;
+    padding-left: 85px;
+}
+
+.header-manager p {
+    background-color: #04ae00;
+    font-family: $main-font;
+    margin-left: 85px;
+    padding: 2px;
+    width: 50px;
+    height: 20px;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.photo-manager {
+    height: 70px;
+}
+
+.message-modal .modal-body {
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.message-modal .modal-body p {
+    padding: 20px;
+}
+
+.message-modal .btn-close {
+    padding: 10px;
+}
+
+.bot-massage p {
+    font-family: $main-font;
+    display: inline-block;
+    height: 60px;
+    border-radius: 3px;
+    background-color: $massage-main-color;
+
+}
+
+.your-massage p {
+    padding: 15px;
+    font-family: $main-font;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: $your-massage-main-color;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.modal-footer {
+    border-top: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    max-height: 120px;
+    position: relative;
+    color: $main-color;
+}
+
+.modal-footer input[type="text"] {
+    padding: 20px;
+    padding-left: 30px;
+    color: $main-color;
+    margin: 15px 0 30px 15px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.modal-footer .btn-accept {
+    text-align: center;
+    padding: 10px 30px;
+    margin: 5px 35%;
+}
+
+.label-8 {
+    display: flex;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.label-8:before {
+    font-family: 'Glyphter';
+    content: '\004e';
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .message-modal .modal-body {
+        width: 60%;
+    }
+
+    .modal-footer {
+        flex-direction: row;
+        max-height: 70px;
+    }
+
+    .modal-footer .btn-accept {
+        margin: 16px;
+        padding: 10px 40px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .message-modal .modal-body {
+        width: 40%;
+    }
+
+    .modal-footer {
+        flex-direction: row;
+        max-height: 70px;
+    }
+
+    .modal-footer .btn-accept {
+        margin: 16px;
+        padding: 10px 40px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .message-modal .modal-body {
+        width: 30%;
+    }
+
+    .modal-footer {
+        flex-direction: row;
+        max-height: 70px;
+    }
+
+    .modal-footer .btn-accept {
+        margin: 16px;
+        padding: 10px 40px;
+    }
+}
