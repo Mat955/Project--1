@@ -1,0 +1,38 @@
+.quit-modal {
+    width: 70%;
+}
+
+.quit-modal .modal-header {
+    padding: 15px;
+}
+
+.quit-modal .modal-body {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.quit-btn .btn {
+    padding: 10px 25px;
+    max-width: 117px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .quit-modal {
+        width: 50%;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    .quit-modal {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .quit-modal {
+        width: 30%;
+    }
+}

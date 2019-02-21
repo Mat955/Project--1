@@ -21,13 +21,6 @@
     border-bottom: 1px solid $border-color;
 }
 
-.btn i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .data {
     width: 30%;
     display: flex;
@@ -38,11 +31,13 @@
     border-bottom: 1px solid $border-color;
 }
 
-.data-period {
-    width: 30%;
+.data-period p {
+    padding-right: 20px;
+    padding-left: 15px;
 }
 
 .icon-calendar {
+    padding: 10px;
     color: $icon-color;
 }
 
@@ -84,28 +79,24 @@
 @media(min-width: 768px) and (max-width: 991px) {
     @include grid('m');
 
-    .data-period {
-        width: 40%;
-    }
-
     .statistic {
         margin-left: 50px;
+    }
+
+    .data-period p {
+        padding-left: 50px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     @include grid('lg');
 
-    .data-period {
-        width: 40%;
-    }
-
-    .data-period span {
-        margin-right: 16%;
-    }
-
     .general h1 {
         text-align: left;
+    }
+
+    .data-period p {
+        padding-left: 50px;
     }
 
     .statistic {
@@ -120,15 +111,11 @@
         text-align: left;
     }
 
-    .data-period {
-        width: 30%;
+    .data-period p {
+        padding-left: 50px;
     }
 
     .statistic {
         margin-left: 250px;
-    }
-
-    .data-period span {
-        margin-right: 21%;
     }
 }
