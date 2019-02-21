@@ -1,10 +1,11 @@
 .message-modal {
     max-width: 1200px;
-    width: 95%;
+    width: 90%;
+    max-height: 100vh;
 }
 
 .header-manager {
-    padding: 15px 16px 40px 16px;
+    padding: 15px 16px 20px 16px;
     border-bottom: 1px solid $border-color;
 }
 
@@ -44,22 +45,56 @@
     padding: 10px;
 }
 
-.bot-massage p {
+.bot-message {
+    position: relative;
+}
+
+.bot-message:after {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-bottom-color: $bot-message-main-color;
+    border-top: 0;
+    border-left: 0;
+}
+
+.bot-message p {
     font-family: $main-font;
     display: inline-block;
     height: 60px;
-    border-radius: 3px;
-    background-color: $massage-main-color;
-
+    border-radius: 15px;
+    background-color: $bot-message-main-color;
 }
 
-.your-massage p {
+.your-message {
+    position: relative;
+}
+
+.your-message:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 23px solid transparent;
+    border-top-color: $your-message-main-color;
+    border-bottom: 0;
+    border-right: 0;
+    margin-bottom: -10px;
+}
+
+.your-message p {
     padding: 15px;
     font-family: $main-font;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: $your-massage-main-color;
-    border-radius: 3px;
+    background-color: $your-message-main-color;
+    border-radius: 15px;
     color: #ffffff;
 }
 
@@ -73,10 +108,10 @@
 }
 
 .modal-footer input[type="text"] {
-    padding: 20px;
+    padding: 15px;
     padding-left: 30px;
     color: $main-color;
-    margin: 15px 0 30px 15px;
+    margin: 15px 0 15px 15px;
     cursor: pointer;
     flex-grow: 1;
 }
@@ -117,7 +152,6 @@
     }
 }
 
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .message-modal .modal-body {
         width: 40%;
@@ -134,7 +168,6 @@
     }
 }
 
-
 @media (min-width: 1200px) {
     .message-modal .modal-body {
         width: 30%;
@@ -142,7 +175,7 @@
 
     .modal-footer {
         flex-direction: row;
-        max-height: 70px;
+        max-height: 65px;
     }
 
     .modal-footer .btn-accept {

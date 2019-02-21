@@ -27,13 +27,11 @@ document.querySelector('#overlay').addEventListener('click', function (e) {
     }
 })
 
-
 document.addEventListener('keyup', function (e) {
     if (e.keyCode === 27) {
         closeModal();
     }
 })
-
 
 function openModal(modal) {
     document.querySelectorAll('#overlay > *').forEach(function (modal) {
@@ -53,7 +51,7 @@ document.querySelector('.top-bar .icon-quit').addEventListener('click',
         openModal('#myModal-quit');
     });
 
-document.querySelector('.sidebar .icon-postback').addEventListener('click',
+document.querySelector('.sidebar a.postback').addEventListener('click',
     function () {
         openModal('#myModal-message');
     });

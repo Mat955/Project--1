@@ -22,49 +22,101 @@
         </div>
     </header>
     <nav class="sidebar">
-        <div class="logo-menu"><img class="menu-logo" src="../../images/logo.png" alt="logo"><img class="icons-ham" src="../../sass/fonts/ham.svg"
+        <div class="logo-menu"><img class="menu-logo" src="/images/logo.png" alt="logo"><img class="icons-ham" src="/sass/fonts/ham.svg"
                 alt="hamburger"></div>
         <div class="sidebar-big">
             <ul>
-                <li><a href="#"><i class="icn icon-general"></i>General</a></li>
-                <li><a href="#"><i class="icn icon-details"></i>Details</a></li>
-                <li><a href="#"><i class="icn icon-links"></i>Links</a></li>
-                <li><a href="#"><i class="icn icon-banners"></i>Banners</a></li>
-                <li><a href="#"><i class="icn icon-personaldata"></i>Personal data</a></li>
-                <li><a href="#"><i class="icn icon-payout"></i>Payout</a></li>
-                <li><a href="#"><i class="icn icon-postback"></i>Postback</a></li>
+                <li><a href="/index.html"><i class="icn icon-general"></i>General</a></li>
+                <li><a href="/templates/pages/details.html"><i class="icn icon-details"></i>Details</a></li>
+                <li><a href="/index.html"><i class="icn icon-links"></i>Links</a></li>
+                <li><a href="/templates/pages/banners.html"><i class="icn icon-banners"></i>Banners</a></li>
+                <li><a href="/templates/pages/personal_data.html"><i class="icn icon-personaldata"></i>Personal data</a></li>
+                <li><a href="/templates/pages/payout.html"><i class="icn icon-payout"></i>Payout</a></li>
+                <li><a class="postback" href="#"><i class="icn icon-postback"></i>Postback</a></li>
             </ul>
             <div class="manager">
                 <h2>Your manager</h2>
-                <img src="../../images/Layer_4.png" alt="manager" align="left">
+                <img src="/images/Layer_4.png" alt="manager" align="left">
                 <h3>Mikhael E.</h3>
             </div>
         </div>
         <div class="sidebar-small">
             <ul>
-                <li><a href="#"><i class="icn icon-general"></i>General</a></li>
-                <li><a href="#"><i class="icn icon-details"></i>Details</a></li>
-                <li><a href="#"><i class="icn icon-links"></i>Links</a></li>
-                <li><a href="#"><i class="icn icon-banners"></i>Banners</a></li>
-                <li><a href="#"><i class="icn icon-personaldata"></i>Personal data</a></li>
-                <li><a href="#"><i class="icn icon-payout"></i>Payout</a></li>
-                <li><a href="#"><i class="icn icon-postback"></i>Postback</a></li>
+                <li><a href="/index.html"><i class="icn icon-general"></i>General</a></li>
+                <li><a href="/templates/pages/details.html"><i class="icn icon-details"></i>Details</a></li>
+                <li><a href="/index.html"><i class="icn icon-links"></i>Links</a></li>
+                <li><a href="/templates/pages/banners.html"><i class="icn icon-banners"></i>Banners</a></li>
+                <li><a href="/templates/pages/personal_data.html"><i class="icn icon-personaldata"></i>Personal data</a></li>
+                <li><a href="/templates/pages/payout.html"><i class="icn icon-payout"></i>Payout</a></li>
+                <li><a class="postback" href="#"><i class="icn icon-postback"></i>Postback</a></li>
             </ul>
             <ul class="small-topbar">
                 <li><a href="#"><i class="ico icon-wallet"></i>$1,500.00</a></li>
                 <li><a href="#"><i class="ico icon-notification"></i></a></li>
                 <li><a class="profile" href="#"><i class="ico icon-profile"></i>Leonardo Dicaprio</a></li>
-                <li><a href="#"><i class="ico icon-quit"></i></a></li>
+                <li><a href="#"><i class="supa ico icon-quit"></i></a></li>
             </ul>
-            <div class="manager">
-                <h2>Your manager</h2>
-                <img src="../../images/Layer_4.png" alt="manager" align="left">
-                <h3>Mikhael E.</h3>
-            </div>
         </div>
     </nav>
     <div class="container">
         <div class="container-fluid">
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
+                    <div class="modal-header">
+                        <h1>login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="label-5">
+                            <div class="label-6">
+                                <input type="text" name="user-name" placeholder="login name">
+                            </div>
+                            <div class="label-7">
+                                <input type="password" name="user-surname" placeholder="password">
+                            </div>
+                            <div class="btn btn-accept">Enter</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal quit-modal" id="myModal-quit">
+                    <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
+                    <div class="modal-header">
+                        <h1>Do you really want Quit?</h1>
+                    </div>
+                    <div class="modal-body quit-btn">
+                        <div class="btn btn-cancel quits">Cancel</div>
+                        <div class="btn btn-accept quits">Quit</div>
+                    </div>
+                </div>
+                <div class="modal message-modal" id="myModal-message">
+                    <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
+                    <div class="modal-header">
+                        <h1>Online Chat With Your Personal Manager</h1>
+                    </div>
+                    <div class="header-manager">
+                        <img class="photo-manager" src="/images/Layer_4.png" alt="manager" align="left">
+                        <h2>Michael E.</h2>
+                        <p>online</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bot-message">
+                            <p>Hello. Can I help you?</p>
+                        </div>
+                        <div class="your-message">
+                            <p>Hello! I would like to know about Postback.</p>
+                        </div>
+                        <div class="bot-message">
+                            <p>Ok. 5min...</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="label-8">
+                            <input type="text" name="user-message" placeholder="Enter the message...">
+                        </div>
+                        <div class="btn btn-accept">Send</div>
+                    </div>
+                </div>
+            </div>
             <section class="links">
                 <h1>Banners</h1>
                 <div class="table">
@@ -104,7 +156,7 @@
             </section>
         </div>
     </div>
-    <script src="../../js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
