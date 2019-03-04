@@ -15,7 +15,6 @@
     "build:copyhtml": "cpy ./templates/pages/*.html docs/templates/pages",
     "build:copyindex": "cpy index.html docs/",
     "build:copyfonts": "cpy ./fonts/*.* docs/fonts",
-    "build:clean": "rimraf css/*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build:img": "imagemin-newer images/ docs/images",
