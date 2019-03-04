@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 
-.label-5 {
+.label-loggin {
     display: flex;
     max-height: 20px;
     justify-content: center;
@@ -85,7 +85,7 @@
     position: relative;
 }
 
-.label-7:before {
+.label-password:before {
     font-family: 'Glyphter';
     content: '\0051';
     position: absolute;
@@ -93,7 +93,7 @@
     padding-left: 12px;
 }
 
-.label-6:before {
+.label-login:before {
     font-family: 'Glyphter';
     content: '\004d';
     position: absolute;
@@ -101,7 +101,7 @@
     padding-left: 12px;
 }
 
-.label-5 input[type="text"],
+.label-loggin input[type="text"],
 input[type="password"] {
     padding: 10px;
     padding-left: 30px;
@@ -110,14 +110,13 @@ input[type="password"] {
     cursor: pointer;
 }
 
-
-.label-5 .btn-accept {
+.label-loggin .btn-accept {
     padding: 10px 50px;
     margin-left: 10px;
     margin-top: 30px;
 }
 
-.label-5 input[type="text"],
+.label-loggin input[type="text"],
 input[type="password"]:hover {
     color: #333333;
 }
@@ -131,7 +130,7 @@ input[type="password"]:hover {
         padding: 90px;
     }
 
-    .label-5 {
+    .label-loggin {
         flex-direction: column;
     }
 }

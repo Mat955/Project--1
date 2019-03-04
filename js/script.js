@@ -1,37 +1,52 @@
+allListeners();
+
 function toggleMenu(visible) {
     document.querySelector('.sidebar').classList.toggle('show1', visible)
     document.querySelector('.sidebar-small').classList.toggle('big', visible)
     document.querySelector('.btn').classList.toggle('hide', visible)
 }
 
-document.querySelector('.icons-ham').addEventListener('click', function (e) {
-    e.preventDefault();
-    toggleMenu();
-})
-
-
 function closeModal() {
     document.getElementById('overlay').classList.remove('show')
-}
+};
 
-document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
+function allListeners() {
+    document.querySelector('.icons-ham').addEventListener('click', function (e) {
         e.preventDefault();
-        closeModal();
-    })
-})
+        toggleMenu();
+    });
+    document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            closeModal();
+        });
+    });
+    document.querySelector('#overlay').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+    document.addEventListener('keyup', function (e) {
+        if (e.keyCode === 27) {
+            closeModal();
+        }
+    });
 
-document.querySelector('#overlay').addEventListener('click', function (e) {
-    if (e.target === this) {
-        closeModal();
-    }
-})
+    document.querySelector('.top-bar .profile').addEventListener('click',
+        function () {
+            openModal('#my-modal');
+        });
 
-document.addEventListener('keyup', function (e) {
-    if (e.keyCode === 27) {
-        closeModal();
-    }
-})
+    document.querySelector('.top-bar .modal-quit-open').addEventListener('click',
+        function () {
+            openModal('#my-modal-quit');
+        });
+
+    document.querySelector('.sidebar a.postback').addEventListener('click',
+        function () {
+            openModal('#my-modal-message');
+        });
+}
 
 function openModal(modal) {
     document.querySelectorAll('#overlay > *').forEach(function (modal) {
@@ -40,18 +55,3 @@ function openModal(modal) {
     document.querySelector('#overlay').classList.add('show')
     document.querySelector(modal).classList.add('show')
 }
-
-document.querySelector('.top-bar .profile').addEventListener('click',
-    function () {
-        openModal('#myModal');
-    });
-
-document.querySelector('.top-bar .icon-quit').addEventListener('click',
-    function () {
-        openModal('#myModal-quit');
-    });
-
-document.querySelector('.sidebar a.postback').addEventListener('click',
-    function () {
-        openModal('#myModal-message');
-    });

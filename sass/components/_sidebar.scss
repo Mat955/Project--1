@@ -51,6 +51,11 @@ nav ul li:hover>a {
     height: 16px;
 }
 
+.sidebar.component {
+    position: static;
+    height: 100vh;
+}
+
 .manager {
     margin-left: 20px;
 }
