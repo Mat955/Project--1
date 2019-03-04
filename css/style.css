@@ -288,6 +288,8 @@ nav ul li:hover > a { cursor: pointer; background-color: #282828; border-left: 4
 
 .details { padding-right: 15px; width: 16px; height: 16px; }
 
+.sidebar.component { position: static; height: 100vh; }
+
 .manager { margin-left: 20px; }
 
 .manager h2 { color: #808080; font-family: "Roboto", sans-serif; font-size: 14px; padding-top: 20px; padding-bottom: 20px; font-weight: 500; text-transform: uppercase; }
@@ -315,6 +317,8 @@ h2 { font-size: 16px; color: #a6a6a6; font-family: "Roboto", sans-serif; font-we
 .top-bar ul { font-size: 0; margin: 0; padding: 0; height: 100%; list-style-type: none; float: right; }
 
 .top-bar ul li { display: inline-block; border-left: 1px solid #e3e3e3; height: 100%; }
+
+.top-bar.component { position: static; }
 
 .top-bar ul li a { display: block; font-size: 20px; color: #9c9c9c; padding: 20px; font-family: "Roboto", sans-serif; font-weight: 400; text-decoration: none; }
 
@@ -352,21 +356,21 @@ h2 { font-size: 16px; color: #a6a6a6; font-family: "Roboto", sans-serif; font-we
 
 .btn-close:hover { color: #333333; cursor: pointer; }
 
-.label-5 { display: -ms-flexbox; display: flex; max-height: 20px; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: relative; }
+.label-loggin { display: -ms-flexbox; display: flex; max-height: 20px; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-.label-7:before { font-family: 'Glyphter'; content: '\0051'; position: absolute; padding-top: 20px; padding-left: 12px; }
+.label-password:before { font-family: 'Glyphter'; content: '\0051'; position: absolute; padding-top: 20px; padding-left: 12px; }
 
-.label-6:before { font-family: 'Glyphter'; content: '\004d'; position: absolute; padding-top: 20px; padding-left: 12px; }
+.label-login:before { font-family: 'Glyphter'; content: '\004d'; position: absolute; padding-top: 20px; padding-left: 12px; }
 
-.label-5 input[type="text"], input[type="password"] { padding: 10px; padding-left: 30px; color: #a6a6a6; margin-left: 5px; cursor: pointer; }
+.label-loggin input[type="text"], input[type="password"] { padding: 10px; padding-left: 30px; color: #a6a6a6; margin-left: 5px; cursor: pointer; }
 
-.label-5 .btn-accept { padding: 10px 50px; margin-left: 10px; margin-top: 30px; }
+.label-loggin .btn-accept { padding: 10px 50px; margin-left: 10px; margin-top: 30px; }
 
-.label-5 input[type="text"], input[type="password"]:hover { color: #333333; }
+.label-loggin input[type="text"], input[type="password"]:hover { color: #333333; }
 
 @media (max-width: 767px) { .modal { width: 75%; }
   .modal-body { padding: 90px; }
-  .label-5 { -ms-flex-direction: column; flex-direction: column; } }
+  .label-loggin { -ms-flex-direction: column; flex-direction: column; } }
 
 .quit-modal { width: 70%; }
 
@@ -416,9 +420,9 @@ h2 { font-size: 16px; color: #a6a6a6; font-family: "Roboto", sans-serif; font-we
 
 .modal-footer .btn-accept { text-align: center; padding: 10px 30px; margin: 5px 35%; }
 
-.label-8 { display: -ms-flexbox; display: flex; width: 100%; padding-right: 20px; }
+.label-footer { display: -ms-flexbox; display: flex; width: 100%; padding-right: 20px; }
 
-.label-8:before { font-family: 'Glyphter'; content: '\004e'; position: absolute; padding-top: 25px; padding-left: 25px; }
+.label-footer:before { font-family: 'Glyphter'; content: '\004e'; position: absolute; padding-top: 25px; padding-left: 25px; }
 
 @media (min-width: 768px) and (max-width: 991px) { .message-modal .modal-body { width: 60%; }
   .modal-footer { -ms-flex-direction: row; flex-direction: row; max-height: 70px; }

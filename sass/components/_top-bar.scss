@@ -20,6 +20,10 @@
     height: 100%;
 }
 
+.top-bar.component {
+    position: static;
+}
+
 .top-bar ul li a {
     display: block;
     font-size: 20px;
