@@ -1,7 +1,10 @@
 'use strict';
 
-var modalOverlay = '#overlay';
-var closeAllModalOverlay = '#overlay > *';
+var modalOverlayId = '#overlay';
+var openMyModalId = '#my-modal';
+var openModalQuitId = '#my-modal-quit';
+var openModalMessageId = '#my-modal-message';
+
 
 initialize();
 
@@ -12,7 +15,7 @@ function toggleMenu(visible) {
 }
 
 function closeModal() {
-    document.querySelector(modalOverlay).classList.remove('show');
+    document.querySelector(modalOverlayId).classList.remove('show');
 }
 
 function initialize() {
@@ -24,13 +27,13 @@ function registerListeners() {
         e.preventDefault();
         toggleMenu();
     });
-    document.querySelectorAll((modalOverlay), '.js--close-modal').forEach(function (btn) {
+    document.querySelectorAll(modalOverlayId, '.js--close-modal').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
             closeModal();
         });
     });
-    document.querySelector('#overlay').addEventListener('click', function (e) {
+    document.querySelector(modalOverlayId).addEventListener('click', function (e) {
         if (e.target === this) {
             closeModal();
         }
@@ -42,22 +45,22 @@ function registerListeners() {
     });
 
     document.querySelector('.top-bar .profile').addEventListener('click', function () {
-        openModal('#my-modal');
+        openModal(openMyModalId);
     });
 
     document.querySelector('.top-bar .modal-quit-open').addEventListener('click', function () {
-        openModal('#my-modal-quit');
+        openModal(openModalQuitId);
     });
 
     document.querySelector('.sidebar a.postback').addEventListener('click', function () {
-        openModal('#my-modal-message');
+        openModal(openModalMessageId);
     });
 }
 
 function openModal(modal) {
-    document.querySelectorAll(closeAllModalOverlay).forEach(function (modal) {
+    document.querySelectorAll(modalOverlayId + '> *').forEach(function (modal) {
         modal.classList.remove('show');
     });
-    document.querySelector(modalOverlay).classList.add('show');
+    document.querySelector(modalOverlayId).classList.add('show');
     document.querySelector(modal).classList.add('show');
 }
