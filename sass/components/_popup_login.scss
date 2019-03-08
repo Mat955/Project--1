@@ -38,10 +38,10 @@
 .modal-header {
     padding: 2px 16px;
     border-bottom: 1px solid $border-color;
-}
 
-.modal-header h1 {
-    padding: 10px;
+    h1 {
+        padding: 10px;
+    }
 }
 
 .modal-body {
@@ -50,11 +50,11 @@
 
 .headline {
     display: flex;
-}
 
-.headline h1 {
-    text-align: left;
-    border-bottom: 1px solid $border-color;
+    h1 {
+        text-align: left;
+        border-bottom: 1px solid $border-color;
+    }
 }
 
 .modal.show {
@@ -83,6 +83,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
+    .btn-accept {
+        padding: 10px 50px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
 }
 
 .label-password:before {
@@ -108,12 +114,6 @@ input[type="password"] {
     color: $main-color;
     margin-left: 5px;
     cursor: pointer;
-}
-
-.label-loggin .btn-accept {
-    padding: 10px 50px;
-    margin-left: 10px;
-    margin-top: 30px;
 }
 
 .label-loggin input[type="text"],

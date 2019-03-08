@@ -1,21 +1,30 @@
-allListeners();
+'use strict';
+
+var modalOverlay = '#overlay';
+var closeAllModalOverlay = '#overlay > *';
+
+initialize();
 
 function toggleMenu(visible) {
-    document.querySelector('.sidebar').classList.toggle('show1', visible)
-    document.querySelector('.sidebar-small').classList.toggle('big', visible)
-    document.querySelector('.btn').classList.toggle('hide', visible)
+    document.querySelector('.sidebar').classList.toggle('.show-sidebar', visible);
+    document.querySelector('.sidebar-small').classList.toggle('big', visible);
+    document.querySelector('.btn').classList.toggle('hide', visible);
 }
 
 function closeModal() {
-    document.getElementById('overlay').classList.remove('show')
-};
+    document.querySelector(modalOverlay).classList.remove('show');
+}
 
-function allListeners() {
+function initialize() {
+    registerListeners();
+}
+
+function registerListeners() {
     document.querySelector('.icons-ham').addEventListener('click', function (e) {
         e.preventDefault();
         toggleMenu();
     });
-    document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+    document.querySelectorAll((modalOverlay), '.js--close-modal').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
             closeModal();
@@ -32,26 +41,23 @@ function allListeners() {
         }
     });
 
-    document.querySelector('.top-bar .profile').addEventListener('click',
-        function () {
-            openModal('#my-modal');
-        });
+    document.querySelector('.top-bar .profile').addEventListener('click', function () {
+        openModal('#my-modal');
+    });
 
-    document.querySelector('.top-bar .modal-quit-open').addEventListener('click',
-        function () {
-            openModal('#my-modal-quit');
-        });
+    document.querySelector('.top-bar .modal-quit-open').addEventListener('click', function () {
+        openModal('#my-modal-quit');
+    });
 
-    document.querySelector('.sidebar a.postback').addEventListener('click',
-        function () {
-            openModal('#my-modal-message');
-        });
+    document.querySelector('.sidebar a.postback').addEventListener('click', function () {
+        openModal('#my-modal-message');
+    });
 }
 
 function openModal(modal) {
-    document.querySelectorAll('#overlay > *').forEach(function (modal) {
-        modal.classList.remove('show')
-    })
-    document.querySelector('#overlay').classList.add('show')
-    document.querySelector(modal).classList.add('show')
+    document.querySelectorAll(closeAllModalOverlay).forEach(function (modal) {
+        modal.classList.remove('show');
+    });
+    document.querySelector(modalOverlay).classList.add('show');
+    document.querySelector(modal).classList.add('show');
 }

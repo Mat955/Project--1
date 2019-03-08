@@ -7,25 +7,26 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: $background-color-sitebar;
-}
 
-nav ul {
-    padding: 0;
-    list-style-type: none;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #333333;
-    padding-top: 20px;
-}
+    ul {
+        padding: 0;
+        list-style-type: none;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #333333;
+        padding-top: 20px;
+    }
 
-nav ul li a {
-    display: block;
-    padding-left: 15px;
-    font-size: $menu-font-size;
-    line-height: 42px;
-    text-decoration: none;
-    font-family: $main-font;
-    font-weight: 300;
-    color: #999999;
+    ul li a {
+        display: block;
+        padding-left: 15px;
+        font-size: $menu-font-size;
+        line-height: 42px;
+        text-decoration: none;
+        font-family: $main-font;
+        font-weight: 300;
+        color: #999999;
+    }
+
 }
 
 nav ul li:hover>a {
@@ -36,7 +37,6 @@ nav ul li:hover>a {
 }
 
 .icn {
-    padding-right: 15px;
     font-size: 25px;
 }
 
@@ -58,23 +58,23 @@ nav ul li:hover>a {
 
 .manager {
     margin-left: 20px;
-}
 
-.manager h2 {
-    color: #808080;
-    font-family: $main-font;
-    font-size: $paragraph-font-size;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
+    h2 {
+        color: #808080;
+        font-family: $main-font;
+        font-size: $paragraph-font-size;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
 
-.manager h3 {
-    color: #56819f;
-    font-family: $main-font;
-    font-size: $paragraph-font-size;
-    font-weight: 300;
-    padding-top: 15px;
-    padding-left: 55px;
+    h3 {
+        color: #56819f;
+        font-family: $main-font;
+        font-size: $paragraph-font-size;
+        font-weight: 300;
+        padding-top: 15px;
+        padding-left: 55px;
+    }
 }

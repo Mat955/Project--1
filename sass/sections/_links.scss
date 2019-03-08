@@ -38,29 +38,29 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 0;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    h2,
+    .link {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        visibility: hidden;
+    }
 }
 
-.table-link h2,
-.link {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.table-link:hover {
-    background-color: transparent;
-}
-
-.table-link .icons {
-    visibility: hidden;
+.table-link:nth-of-type(11) {
+    border-bottom: 1px solid $border-color;
 }
 
 .btn {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.table-link:nth-of-type(11) {
-    border-bottom: 1px solid $border-color;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -70,40 +70,40 @@
         flex-direction: row;
         margin-bottom: 0;
         padding: 20px;
-    }
 
-    .table-link .link {
-        width: 120px;
-        margin-left: 200px;
-    }
+        &:hover {
+            background-color: rgba(177, 191, 191, 0.18);
+        }
 
-    .table-link .icons {
-        visibility: hidden;
-        margin-left: 120px;
+        &:hover .icons {
+            visibility: visible;
+        }
+
+        &:hover .icon-links {
+            color: $icon-main-color-hover;
+        }
+
+        .link {
+            width: 120px;
+            margin-left: 200px;
+        }
+
+        .icons {
+            visibility: hidden;
+            margin-left: 120px;
+        }
+
+        h2,
+        .link {
+            text-align: left;
+            margin-bottom: 0;
+        }
     }
 
     .icons i {
         color: $icon-color;
         margin-left: 10px;
         font-size: 16px;
-    }
-
-    .table-link h2,
-    .link {
-        text-align: left;
-        margin-bottom: 0;
-    }
-
-    .table-link:hover {
-        background-color: rgba(177, 191, 191, 0.18);
-    }
-
-    .table-link:hover .icons {
-        visibility: visible;
-    }
-
-    .table-link:hover .icon-links {
-        color: $icon-main-color-hover;
     }
 
 }
@@ -115,16 +115,33 @@
         flex-direction: row;
         margin-bottom: 0;
         padding: 20px;
-    }
 
-    .table-link .link {
-        width: 120px;
-        margin-left: 200px;
-    }
+        &:hover {
+            background-color: rgba(177, 191, 191, 0.18);
+        }
 
-    .table-link .icons {
-        visibility: hidden;
-        margin-left: 120px;
+        &:hover .icons {
+            visibility: visible;
+        }
+
+        &:hover .icon-links {
+            color: $icon-main-color-hover;
+        }
+
+        .link {
+            width: 120px;
+            margin-left: 200px;
+        }
+
+        .icons {
+            visibility: hidden;
+            margin-left: 120px;
+        }
+
+        h2,
+        .link {
+            text-align: left;
+        }
     }
 
     .icons i {
@@ -141,23 +158,6 @@
     .links h1 {
         text-align: left;
     }
-
-    .table-link h2,
-    .link {
-        text-align: left;
-    }
-
-    .table-link:hover {
-        background-color: rgba(177, 191, 191, 0.18);
-    }
-
-    .table-link:hover .icons {
-        visibility: visible;
-    }
-
-    .table-link:hover .icon-links {
-        color: $icon-main-color-hover;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -167,22 +167,34 @@
         flex-direction: row;
         margin-bottom: 0;
         padding: 20px;
-    }
 
-    .table-link h2,
-    .link {
-        text-align: left;
-        margin-bottom: 0;
-    }
+        &:hover {
+            background-color: rgba(177, 191, 191, 0.18);
+        }
 
-    .table-link .link {
-        width: 120px;
-        margin-left: 200px;
-    }
+        &:hover .icons {
+            visibility: visible;
+        }
 
-    .table-link .icons {
-        visibility: hidden;
-        margin-left: 120px;
+        &:hover .icon-links {
+            color: $icon-main-color-hover;
+        }
+
+        h2,
+        .link {
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .link {
+            width: 120px;
+            margin-left: 200px;
+        }
+
+        .icons {
+            visibility: hidden;
+            margin-left: 120px;
+        }
     }
 
     .icons i {
@@ -196,17 +208,5 @@
 
     .links h1 {
         text-align: left;
-    }
-
-    .table-link:hover {
-        background-color: rgba(177, 191, 191, 0.18);
-    }
-
-    .table-link:hover .icons {
-        visibility: visible;
-    }
-
-    .table-link:hover .icon-links {
-        color: $icon-main-color-hover;
     }
 }

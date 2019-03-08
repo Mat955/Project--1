@@ -4,9 +4,8 @@
     width: 310px;
     border-bottom: 1px solid $border-color;
     padding-bottom: 5px;
-}
 
-
-.list-digit .number-list {
-    align-self: flex-end;
+    .number-list {
+        align-self: flex-end;
+    }
 }

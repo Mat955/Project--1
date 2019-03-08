@@ -13,12 +13,12 @@
 .general {
     display: flex;
     flex-direction: column;
-}
 
-.general h1 {
-    text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid $border-color;
+    h1 {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid $border-color;
+    }
 }
 
 .data {
@@ -29,6 +29,10 @@
     padding-top: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid $border-color;
+
+    .btn {
+        margin-left: 5px;
+    }
 }
 
 .data-period p {
@@ -41,39 +45,35 @@
     color: $icon-color;
 }
 
-.data .btn {
-    margin-left: 5px;
-}
-
 .statistic {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
-}
 
-.statistic .list-digit {
-    justify-content: space-between;
-    margin-right: 60px;
-    margin-bottom: 22px;
+    .list-digit {
+        justify-content: space-between;
+        margin-right: 60px;
+        margin-bottom: 22px;
+    }
 }
 
 .earning-chart {
     margin-top: 50px;
-}
 
-.earning-chart h2 {
-    text-align: center;
-}
+    h2 {
+        text-align: center;
+    }
 
-.earning-chart .graph {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    .graph {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-.earning-chart .responsive {
-    max-width: 100%;
-    height: auto;
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
