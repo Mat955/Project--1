@@ -16,13 +16,13 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ffffff;
-}
 
-.personal_data h1 {
-    text-align: left;
-    padding: 15px;
-    border-bottom: 1px solid $border-color;
-    font-weight: $section-font-weight;
+    h1 {
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px solid $border-color;
+        font-weight: $section-font-weight;
+    }
 }
 
 .field {

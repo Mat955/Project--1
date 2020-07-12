@@ -59,24 +59,25 @@
         </div>
     </nav>
     <div class="container">
-        <div class="overlay" id="overlay">
-            <div class="modal" id="my-modal">
-                <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
-                <div class="modal-header">
-                    <h1>login</h1>
-                </div>
-                <div class="modal-body">
-                    <div class="label-loggin">
-                        <div class="label-login">
-                            <input type="text" name="user-name" placeholder="login name">
+        <div class="container-fluid">
+            <div class="overlay" id="overlay">
+                <div class="modal" id="my-modal">
+                    <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
+                    <div class="modal-header">
+                        <h1>login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="label-loggin">
+                            <div class="label-login">
+                                <input type="text" name="user-name" placeholder="login name">
+                            </div>
+                            <div class="label-password">
+                                <input type="password" name="user-surname" placeholder="password">
+                            </div>
+                            <div class="btn btn-accept">Enter</div>
                         </div>
-                        <div class="label-password">
-                            <input type="password" name="user-surname" placeholder="password">
-                        </div>
-                        <div class="btn btn-accept">Enter</div>
                     </div>
                 </div>
-            </div>
             <div class="modal quit-modal" id="my-modal-quit">
                 <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
                 <div class="modal-header">
@@ -104,98 +105,120 @@
                     <div class="your-message">
                         <p>Hello! I would like to know about Postback.</p>
                     </div>
-                    <div class="bot-message">
-                        <p>Ok. 5min...</p>
+                    <div class="modal-body quit-btn">
+                        <div class="btn btn-cancel quits">Cancel</div>
+                        <div class="btn btn-accept quits">Quit</div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="label-footer">
-                        <input type="text" name="user-message" placeholder="Enter the message...">
+                <div class="modal message-modal" id="my-modal-message">
+                    <div class="btn-close js--close-modal"><i class="icon-close"></i></div>
+                    <div class="modal-header">
+                        <h1>Online Chat With Your Personal Manager</h1>
                     </div>
-                    <div class="btn btn-accept">Send</div>
+                    <div class="header-manager">
+                        <img class="photo-manager" src="/images/Layer_4.png" alt="manager" align="left">
+                        <h2>Michael E.</h2>
+                        <p>online</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bot-message">
+                            <p>Hello. Can I help you?</p>
+                        </div>
+                        <div class="your-message">
+                            <p>Hello! I would like to know about Postback.</p>
+                        </div>
+                        <div class="bot-message">
+                            <p>Ok. 5min...</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="label-footer">
+                            <input type="text" name="user-message" placeholder="Enter the message...">
+                        </div>
+                        <div class="btn btn-accept">Send</div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal_data">
+                <h1>personal data</h1>
+                <div class="row">
+                    <div class="labels_1">
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Name</label>
+                                <input type="text" name="user-name" value="Leonardo">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Surname</label>
+                                <input type="text" name="user-surname" value="Dicaprio">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>E-mail</label>
+                                <input type="email" name="mail" value="leo@gmail.com">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field last">
+                                <label>Phone number</label>
+                                <input type="text" name="phone-number" value="+1 432 555 00 44" maxlength="16">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labels_2">
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Skype</label>
+                                <input type="text" name="user-skype" value="Leonardo.D">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>ICQ</label>
+                                <input type="text" name="user-icq">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Msn</label>
+                                <input type="text" name="user-msn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labels_3">
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Wallet</label>
+                                <input type="text" name="user-wallet">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="labels_4">
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Password</label>
+                                <input type="password" name="user-password">
+                            </div>
+                        </form>
+                        <form action="" method="POST">
+                            <div class="field">
+                                <label>Repeat</label>
+                                <input type="password" name="user-password">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="personal_data">
-        <h1>personal data</h1>
-        <div class="row">
-            <div class="labels_1">
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Name</label>
-                        <input type="text" name="user-name" value="Leonardo">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Surname</label>
-                        <input type="text" name="user-surname" value="Dicaprio">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>E-mail</label>
-                        <input type="email" name="mail" value="leo@gmail.com">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field last">
-                        <label>Phone number</label>
-                        <input type="text" name="phone-number" value="+1 432 555 00 44" maxlength="16">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="labels_2">
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Skype</label>
-                        <input type="text" name="user-skype" value="Leonardo.D">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>ICQ</label>
-                        <input type="text" name="user-icq">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Msn</label>
-                        <input type="text" name="user-msn">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="labels_3">
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Wallet</label>
-                        <input type="text" name="user-wallet">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="labels_4">
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Password</label>
-                        <input type="password" name="user-password">
-                    </div>
-                </form>
-                <form action="" method="POST">
-                    <div class="field">
-                        <label>Repeat</label>
-                        <input type="password" name="user-password">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     </div>
     <script src="../../js/script.js"></script>
 </body>

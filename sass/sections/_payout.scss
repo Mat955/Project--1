@@ -1,24 +1,26 @@
-tfoot .panel-table {
-    width: 100%;
-    text-align: center;
-}
+tfoot {
+    .panel-table {
+        width: 100%;
+        text-align: center;
+    }
 
-tfoot .panel-table a {
-    display: inline-block;
-    color: $link-color;
-    font-size: $main-font-size;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
+    .panel-table a {
+        display: inline-block;
+        color: $link-color;
+        font-size: $main-font-size;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
 
-tfoot .panel-table a i {
-    font-size: 15px;
-}
+    .panel-table a i {
+        font-size: 15px;
+    }
 
-tfoot .panel-table .active {
-    background-color: #f1f3f3;
-    color: $main-color;
+    .panel-table .active {
+        background-color: #f1f3f3;
+        color: $main-color;
+    }
 }
 
 tfoot .panel-table a:hover {

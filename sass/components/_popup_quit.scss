@@ -1,15 +1,15 @@
 .quit-modal {
     width: 70%;
-}
 
-.quit-modal .modal-header {
-    padding: 15px;
-}
+    .modal-header {
+        padding: 15px;
+    }
 
-.quit-modal .modal-body {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
+    .modal-body {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+    }
 }
 
 .quit-btn .btn {

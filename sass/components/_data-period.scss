@@ -3,26 +3,25 @@
     max-width: 300px;
     border-radius: 3px;
     border: 1px solid $border-color;
-}
 
+    &:hover {
+        border: 1px solid #b1b1b1;
+    }
 
-.data-period p {
-    font-size: $paragraph-font-size;
-    color: $paragraph-color;
-    font-weight: $paragraph-font-weight;
-    line-height: $main-line-height;
-    padding-right: 20px;
-    padding-left: 50px;
+    p {
+        font-size: $paragraph-font-size;
+        color: $paragraph-color;
+        font-weight: $paragraph-font-weight;
+        line-height: $main-line-height;
+        padding-right: 20px;
+        padding-left: 50px;
+    }
+
+    &:hover i {
+        color: #333333;
+    }
 }
 
 .data-period p:nth-of-type(1) {
     border-right: 1px solid $border-color;
-}
-
-.data-period i:hover {
-    color: #333333;
-}
-
-.data-period:hover {
-    border: 1px solid #b1b1b1;
 }

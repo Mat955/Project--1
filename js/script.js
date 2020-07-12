@@ -1,27 +1,39 @@
-allListeners();
+'use strict';
+
+var modalOverlayId = '#overlay';
+var openMyModalId = '#my-modal';
+var openModalQuitId = '#my-modal-quit';
+var openModalMessageId = '#my-modal-message';
+
+
+initialize();
 
 function toggleMenu(visible) {
-    document.querySelector('.sidebar').classList.toggle('show1', visible)
-    document.querySelector('.sidebar-small').classList.toggle('big', visible)
-    document.querySelector('.btn').classList.toggle('hide', visible)
+    document.querySelector('.sidebar').classList.toggle('.show-sidebar', visible);
+    document.querySelector('.sidebar-small').classList.toggle('big', visible);
+    document.querySelector('.btn').classList.toggle('hide', visible);
 }
 
 function closeModal() {
-    document.getElementById('overlay').classList.remove('show')
-};
+    document.querySelector(modalOverlayId).classList.remove('show');
+}
 
-function allListeners() {
+function initialize() {
+    registerListeners();
+}
+
+function registerListeners() {
     document.querySelector('.icons-ham').addEventListener('click', function (e) {
         e.preventDefault();
         toggleMenu();
     });
-    document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+    document.querySelectorAll(modalOverlayId, '.js--close-modal').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
             closeModal();
         });
     });
-    document.querySelector('#overlay').addEventListener('click', function (e) {
+    document.querySelector(modalOverlayId).addEventListener('click', function (e) {
         if (e.target === this) {
             closeModal();
         }
@@ -32,26 +44,23 @@ function allListeners() {
         }
     });
 
-    document.querySelector('.top-bar .profile').addEventListener('click',
-        function () {
-            openModal('#my-modal');
-        });
+    document.querySelector('.top-bar .profile').addEventListener('click', function () {
+        openModal(openMyModalId);
+    });
 
-    document.querySelector('.top-bar .modal-quit-open').addEventListener('click',
-        function () {
-            openModal('#my-modal-quit');
-        });
+    document.querySelector('.top-bar .modal-quit-open').addEventListener('click', function () {
+        openModal(openModalQuitId);
+    });
 
-    document.querySelector('.sidebar a.postback').addEventListener('click',
-        function () {
-            openModal('#my-modal-message');
-        });
+    document.querySelector('.sidebar a.postback').addEventListener('click', function () {
+        openModal(openModalMessageId);
+    });
 }
 
 function openModal(modal) {
-    document.querySelectorAll('#overlay > *').forEach(function (modal) {
-        modal.classList.remove('show')
-    })
-    document.querySelector('#overlay').classList.add('show')
-    document.querySelector(modal).classList.add('show')
+    document.querySelectorAll(modalOverlayId + '> *').forEach(function (modal) {
+        modal.classList.remove('show');
+    });
+    document.querySelector(modalOverlayId).classList.add('show');
+    document.querySelector(modal).classList.add('show');
 }

@@ -24,11 +24,11 @@ body {
 nav {
     position: fixed;
     width: 15%;
-}
 
-nav ul {
-    padding-top: 0;
-    padding-bottom: 0;
+    ul {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .top-bar {
@@ -63,6 +63,10 @@ nav ul {
 .sidebar {
     width: 10%;
     height: 100%;
+
+    .menu-logo {
+        display: none;
+    }
 }
 
 .sidebar-big {
@@ -73,16 +77,13 @@ nav ul {
     display: none;
 }
 
-.sidebar .menu-logo {
-    display: none;
-}
-
-.show1 {
+.show-overlay {
     width: 50%;
     text-align: center;
 }
 
 .big {
+    text-align: center;
     display: block;
 }
 
@@ -91,16 +92,14 @@ nav ul {
 }
 
 .big ul li {
-    text-align: left;
-}
 
-.big ul a {
-    font-size: 16px;
-    padding-top: 14px;
+    ul a {
+        font-size: 16px;
+        padding-top: 14px;
+    }
 }
 
 .small-topbar li i {
-    padding-right: 20px;
     font-size: 20px;
 }
 
@@ -127,12 +126,22 @@ nav ul {
         padding-left: 15px;
     }
 
+    nav ul li a {
+        padding-left: 0;
+    }
+
     .top-bar {
         width: 0;
     }
 
     .icn {
         font-size: 18px;
+    }
+
+    .big ul li a {
+        text-align: center;
+        font-size: 0;
+        line-height: 35px;
     }
 
     .manager {
@@ -180,17 +189,22 @@ nav ul {
         margin-left: 0;
     }
 
-    .show1 {
+    .show-sidebar {
         width: 25%;
         text-align: center;
     }
 
     .hide {
-        display: block;
+        display: none;
     }
 
     .big {
         display: block;
+
+        ul li a {
+            font-size: 0;
+            line-height: 35px;
+        }
     }
 
     .icons-ham {
@@ -211,17 +225,19 @@ nav ul {
         display: none;
     }
 
-    .table-link .link {
-        margin-left: 140px;
-    }
+    .table-link {
+        .link {
+            margin-left: 140px;
+        }
 
-    .table-link .icons {
-        margin-left: 170px;
-    }
+        .icons {
+            margin-left: 170px;
+        }
 
-    .table-link h2,
-    .link {
-        width: 181px;
+        h2,
+        .link {
+            width: 181px;
+        }
     }
 }
 
@@ -242,6 +258,10 @@ nav ul {
         padding-bottom: 20px;
     }
 
+    .icn {
+        padding-right: 15px;
+    }
+
     .statistic {
         margin-left: 0;
     }
@@ -252,19 +272,16 @@ nav ul {
 
     .sidebar {
         width: 15%;
+
+        .menu-logo {
+            display: inline-block;
+            padding-bottom: 30px;
+            margin-left: 10px;
+        }
     }
 
     .sidebar-big {
         display: block;
-    }
-
-    .sidebar .menu-logo {
-        display: inline-block;
-    }
-
-    .menu-logo {
-        padding-bottom: 30px;
-        margin-left: 10px;
     }
 
     .icons-ham {
@@ -280,7 +297,7 @@ nav ul {
         display: none;
     }
 
-    .show1 {
+    .show-sidebar {
         text-align: left;
     }
 
@@ -293,17 +310,19 @@ nav ul {
         justify-content: center;
     }
 
-    .table-link .link {
-        margin-left: 140px;
-    }
+    .table-link {
+        .link {
+            margin-left: 140px;
+        }
 
-    .table-link .icons {
-        margin-left: 160px;
-    }
+        .icons {
+            margin-left: 160px;
+        }
 
-    .table-link h2,
-    .link {
-        width: 181px;
+        h2,
+        .link {
+            width: 181px;
+        }
     }
 }
 
@@ -326,6 +345,10 @@ nav ul {
 
     .statistic {
         margin-left: 0;
+    }
+
+    .icn {
+        padding-right: 15px;
     }
 
     .btn-accept {
@@ -366,7 +389,7 @@ nav ul {
         font-size: 18px;
     }
 
-    .show1 {
+    .show-sidebar {
         width: 15%;
         text-align: left;
     }
